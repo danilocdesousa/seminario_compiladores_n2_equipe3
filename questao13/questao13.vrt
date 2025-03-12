@@ -1,0 +1,38 @@
+inteiro vetor[10];
+constante inteiro tamanho = 9;
+inteiro i, j, troca;
+
+funcao inteiro principal() {
+    apagaTela;
+
+
+    vetor[0] = 9;
+    vetor[1] = 7;
+    vetor[2] = 3;
+    vetor[3] = 8;
+    vetor[4] = 2;
+    vetor[5] = 5;
+    vetor[6] = 1;
+    vetor[7] = 4;
+    vetor[8] = 6;
+    vetor[9] = 0;
+
+    para i = 1 ate tamanho {
+        troca = vetor[i]; 
+        j = i - 1;
+        
+
+        enquanto (j >= 0 e vetor[j] > troca) {
+            vetor[j + 1] = vetor[j];
+            j = j - 1;
+        }
+        
+
+        vetor[j + 1] = troca;
+    }
+
+
+    para i = 0 ate tamanho {
+        escreva(vetor[i]);
+    }
+}
